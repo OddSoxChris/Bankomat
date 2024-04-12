@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Testing
 {
@@ -51,14 +52,15 @@ namespace Testing
         }
         public int CheckAccountBalance(int UserPin, int UserCardNumber)
         {
-            for (int i = 0; i < Accounts.Length; i++)
+            //for (int i = 0; i < Accounts.Length; i++)
             {
-                if (Accounts[i].GetUserCardNumber() == UserCardNumber)
+                //if (Accounts[i].GetUserCardNumber() == UserCardNumber)
                 {
-                    return CheckAccountBalance(UserPin, UserCardNumber);
+                    //return CheckAccountBalance(UserPin, UserCardNumber);
                 }
                 return -1;
             }
-        }
+            // return CheckAccountBalance(UserPin, UserCardNumber);
+        } 
     }
 }
